@@ -3,7 +3,7 @@ class CreateOrders < ActiveRecord::Migration
     create_table :orders do |t|
       t.string :status
       t.decimal :pst_rate
-      t.string :gst_rate;decimal
+      t.decimal :gst_rate
       t.decimal :hst_rate
       t.integer :customer_id
 
