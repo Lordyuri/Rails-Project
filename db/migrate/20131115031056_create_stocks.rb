@@ -3,6 +3,7 @@ class CreateStocks < ActiveRecord::Migration
     create_table :stocks do |t|
       t.string :name
       t.string :description
+      t.string :imagepath
       t.decimal :condition
       t.decimal :price
 

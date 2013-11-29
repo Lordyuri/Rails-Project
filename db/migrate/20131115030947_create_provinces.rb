@@ -5,7 +5,6 @@ class CreateProvinces < ActiveRecord::Migration
       t.decimal :pst
       t.decimal :gst
       t.string :hst
-      t.string :decimal
 
       t.timestamps
     end
