@@ -1,5 +1,6 @@
 class Stock < ActiveRecord::Base
   attr_accessible :condition, :description, :imagepath, :name, :price
 
-  validates_presence_of :condition, :description, :name, :price
+  validates :condition, :description, :name, :price, presence => true
+  validates :condition, :price, numericality => true
 end
