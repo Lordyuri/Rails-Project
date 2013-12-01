@@ -1,10 +1,10 @@
 <h1>Comic Arcive</h1>
 
 <% @stocks.each do |stock| %>
-  <div class="stock">
-    <h2><% stock.name %></h2>
-    <p>$<% stock.price %>, <% stock.condition%></p>
-    <img scr="<% stock.imagepath %>" alt ="No Image" height="100" width="100">
-    <p><% stock.description %></p>
+  <div class="item">
+    <h2><%= link_to stock.name, nook_product_path(stock) %></h2>
+    <p>$<%= stock.price %>, <%= stock.condition%></p>
+    <img scr="<%= stock.imagepath %>" alt ="No Image" height="100" width="100">
+    <p><%= stock.description %></p>
   </div>
 <% end %>

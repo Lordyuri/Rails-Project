@@ -1,2 +1,8 @@
-<h1>Store#show</h1>
-<p>Find me in app/views/store/show.html.erb</p>
+<div class="stock">
+  <h1><%= @stock.name %></h1>
+  <p><%= @stock.description %></p>
+  <img scr="<%= @stock.imagepath %>" alt ="No Image" height="200" width="200">
+  <p>$<%= @stock.price %>, <%= @stock.condition%></p>
+</div>
+
+<p><%= link_to 'Home', root_path %></p>

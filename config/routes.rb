@@ -1,5 +1,6 @@
 ComicNook::Application.routes.draw do
-  root :to => 'store#index', :via => :get
+  resources :stock
+  root :to => 'store#index', :as => :root, :via => :get
   match 'store/:id' => 'store#show', :as => :nook_product, :via => :get
 
   devise_for :admin_users, ActiveAdmin::Devise.config
