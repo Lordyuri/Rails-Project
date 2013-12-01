@@ -1,3 +1,54 @@
 // Place all the styles related to the store controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+    margin: auto;
+    padding: 30px;
+}
+
+.logo {
+    background: rgb(237, 27, 36);
+    float: left;
+}
+
+.header {
+    background: rgb(237, 27, 36);
+    height: 85px;
+    margin-top: -31px;
+    h1{
+        padding: 25px;
+        text-align: center;
+        }
+}
+
+.menu {
+    background: rgb(237, 27, 36);
+    float: left;
+    height: 300px;
+    width: 120px;
+}
+
+.content{
+    .stock{
+        
+    }
+}
+
+.ad{
+    background: rgb(15, 15, 15);
+    float: right;
+    height: 300px;
+    width: 120px;
+}
+
+.footer{
+    background: rgb(15, 15, 15);
+    clear: both;
+}
+
+
+
+
+
+

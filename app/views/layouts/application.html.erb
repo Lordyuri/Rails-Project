@@ -9,18 +9,30 @@
 <body>
 
 <div class="logo">
-  
+  <img src="././assets/logo.jpg" alt="Stars are now aligned Old Ones awake" height="66" width="66"> 
+</div>
+
+<div class="header">
+  <h1>Welcome to the Comic Nook</h1>
 </div>
 
 <div class="menu">
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'Search', search_path %></li>
+    <li><%= link_to 'About us', about_path %></li>
+  </ul>
 </div>
-
-<%= yield %>
 
 <div class="ad">
 </div>
 
+<div class="content>
+  <%= yield %>
+</div>
+
 <div class="footer">
+  <p>ff</p>
 </div>
 
 </body>
