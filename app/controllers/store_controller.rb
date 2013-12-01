@@ -6,4 +6,11 @@ class StoreController < ApplicationController
   def show
     @stock = Stock.find(params[:id])
   end # loads app/views/store/show.html.erb
+  
+  def search
+  end # loads app/views/store/search.html.erb
+  
+  def search_results
+    @stocks = Stock.where("name LIKE ?", "'%#{params[:keywords]}%'")
+  end # loads app/views/store/search_results.html.erb
 end

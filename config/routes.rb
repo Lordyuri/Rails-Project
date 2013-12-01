@@ -3,6 +3,9 @@ ComicNook::Application.routes.draw do
   root :to => 'store#index', :as => :root, :via => :get
   match 'store/:id' => 'store#show', :as => :nook_product, :via => :get
 
+  match 'search' => 'store#search', :as => 'search', :via => :get
+  match 'search' => 'store#search_results', :as => 'search_results', :via => :post
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
