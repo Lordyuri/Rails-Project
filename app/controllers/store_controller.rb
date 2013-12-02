@@ -1,4 +1,9 @@
 class StoreController < ApplicationController
+  
+  def menu
+    @items_count = 0
+  end
+  
   def index
     @stocks = Stock.order(:name)
   end # loads app/views/store/index.html.erb
