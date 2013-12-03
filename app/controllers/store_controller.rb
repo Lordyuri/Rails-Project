@@ -8,6 +8,10 @@ class StoreController < ApplicationController
     
   end
   
+  def checkout_enter
+    
+  end
+  
   def empty_cart
     session[:cart] = []
     redirect_to :action => :index
