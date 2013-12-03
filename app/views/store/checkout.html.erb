@@ -1,0 +1,11 @@
+<h2>Checkout</h2>
+
+<%= form_tag checkout_enter_path do %>
+  <p>First Name: <%= text_field_tag :fname %></p>
+  <p>Last Name: <%= text_field_tag :lname %></p>
+  <p>Address: <%= text_field_tag :address %></p>
+  <p>City: <%= text_field_tag :city %></p>
+  <p>Provice: <%= text_field_tag :provice %></p>
+  <p>Postal Code:<%= text_field_tag :postalcode %></p>
+  <%= submit_tag 'enter' %>
+<% end%>

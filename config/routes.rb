@@ -8,6 +8,7 @@ ComicNook::Application.routes.draw do
 
   match 'empty_cart' => 'store#empty_cart', :as => 'empty_cart', :via => :get
   match 'checkout' => 'store#checkout', :as => 'checkout', :via => :get
+  match 'checkout_enter' => 'store#checkout_enter', :as => 'checkout_enter', :via => :post
 
   match 'search' => 'store#search', :as => 'search', :via => :get
   match 'search_results' => 'store#search_results', :as => 'search_results', :via => :post
