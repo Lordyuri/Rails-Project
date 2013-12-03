@@ -4,6 +4,10 @@ class StoreController < ApplicationController
     @items_count = 0
   end
   
+  def checkout
+    
+  end
+  
   def empty_cart
     session[:cart] = []
     redirect_to :action => :index
