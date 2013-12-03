@@ -1,7 +1,7 @@
 <div class="stock">
   <h1><%= @stock.name %></h1>
   <p><%= @stock.description %></p>
-  <img scr="<%= @stock.imagepath %>" alt ="No Image" height="200" width="200">
+  <%= image_tag("#(stock.imagepath)", :alt => "No Image", :size => "100x100")%>
   <p>$<%= @stock.price %>, <%= @stock.condition%></p>
 </div>
 

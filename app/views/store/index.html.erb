@@ -11,7 +11,7 @@
     <% end%>
     
     <p>$<%= stock.price %>, <%= stock.condition%></p>
-    <img scr="<%= stock.imagepath %>" alt ="No Image" height="100" width="100">
+    <%= image_tag("#(stock.imagepath)", :alt => "No Image", :size => "100x100")%>
     <p><%= stock.description %></p>
   </div>
 <% end %>
