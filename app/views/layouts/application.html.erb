@@ -22,14 +22,13 @@
     <li><%= link_to 'Search', search_path %></li>
     <li><%= link_to 'About us', about_path %></li>
   </ul>
-  
-  <p>You have <%=pluralize @items_count, 'item'%>.</p>
+  <%=render 'cart_menu'%>
 </div>
 
 <div class="ad">
 </div>
 
-<div class="content>
+<div class="content">
   <%= yield %>
 </div>
 

@@ -1,10 +1,16 @@
 ComicNook::Application.routes.draw do
   resources :stock
+  
   root :to => 'store#index', :as => :root, :via => :get
   match 'store/:id' => 'store#show', :as => :nook_product, :via => :get
+  match 'store/:id/add_item' => 'store#add_item', :as => :add_item, :via => :get
+  match 'store/:id/remove_item' => 'store#remove_item', :as => :remove_item, :via => :get
+
+  match 'empty_cart' => 'store#empty_cart', :as => 'empty_cart', :via => :get
+  match 'checkout' => 'store#checkout', :as => 'checkout', :via => :get
 
   match 'search' => 'store#search', :as => 'search', :via => :get
-  match 'search' => 'store#search_results', :as => 'search_results', :via => :post
+  match 'search_results' => 'store#search_results', :as => 'search_results', :via => :post
   match 'about' => 'store#about', :as => 'about', :via => :get
 
   devise_for :admin_users, ActiveAdmin::Devise.config

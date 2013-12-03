@@ -1,0 +1,5 @@
+<p>You have <%=pluralize session[:cart].count, 'item'%>.</p>
+<% if session[:cart].count > 0%>
+  <%= link_to 'Empty Cart', empty_cart_path%>
+  <%= link_to 'Checkout', checkout_path%>
+<% end%>
